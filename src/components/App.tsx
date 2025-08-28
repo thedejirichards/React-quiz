@@ -83,7 +83,7 @@ const reducer = (state: initialStateType, action: any) => {
           state.highScore > state.points ? state.highScore : state.points
       }
     default:
-      throw new Error("Action Unknown");
+      throw Error();
   }
 };
 function App() {
